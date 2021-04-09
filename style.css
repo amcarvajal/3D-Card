@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 85vh;
+  width: 25rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5), 0px 0px 50px rgba(0, 0, 0, 0.4);
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  width: 20rem;
+  z-index: 2;
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+
+  background: radial-gradient(
+    circle,
+    rgba(27, 25, 52, 1) 0%,
+    rgba(219, 29, 29, 1) 12%,
+    rgba(243, 250, 248, 1) 63%,
+    rgba(255, 255, 255, 1) 86%,
+    rgba(2, 0, 36, 1) 100%,
+    rgba(246, 246, 241, 1) 100%
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.info h1 {
+  font-size: 3rem;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #2a263a;
+  font-weight: lighter;
+}
+.sizes {
+  display: flex;
+  justify-content: center;
+}
+.sizes button {
+  padding: 0.5rem 2rem;
+  margin: 5px;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  cursor: pointer;
+  color: #2a263a;
+  font-weight: bold;
+}
+button.active {
+  background: rgb(126, 123, 123);
+  color: white;
+}
+.purchase {
+  margin-top: 5rem;
+}
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
